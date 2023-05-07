@@ -8,7 +8,7 @@ import { CreateStylesOutput } from './types';
  * ([\w\-.]+)  -> capture the "word" following the '$', including hyphen and period characters
  * /g             -> capture all instances
  */
-export const VALUE_REGEX = /(-)?\B\$([\w\-.]+)/g;
+export const VALUE_REGEX = /(-)?\$?([\w\-.]+)/g;
 
 export function mapValues<
   Value,
